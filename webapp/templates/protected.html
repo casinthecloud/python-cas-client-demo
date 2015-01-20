@@ -1,2 +1,21 @@
-protected HTML
-user : {{user}}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>python-cas-client-demo</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+</head>
+<body>
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li><a href="/index">Call the /index page</a></li>
+			<li class="active"><a href="/protected/index">You are on the /protected/index page</a></li>
+			<!-- #### change with your own CAS in the cloud server and your host name #### -->
+			<li><a href="https://freeuse1.casinthecloud.com/leleujgithub/logout?service=http://localhost:8000">Call the CAS logout</a></li>
+		</ul>
+		<h3>
+			<p>User: {{user}}</p>
+		</h3>
+	</div>
+</body>
+</html>
