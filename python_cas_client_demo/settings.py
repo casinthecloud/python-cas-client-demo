@@ -51,7 +51,7 @@ MIDDLEWARE_CLASSES = (
     'cas.middleware.CASMiddleware',
 )
 # CAS:
-CAS_SERVER_URL = "https://freeuse1.casinthecloud.com/leleujgithub/"
+CAS_SERVER_URL = "http://localhost:8888/cas/"
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'cas.backends.CASBackend',
